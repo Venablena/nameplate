@@ -1,0 +1,105 @@
+main  {
+  overflow: hidden;
+  height: 100vh;
+  background-color: black;
+}
+
+.title,
+.name {
+  font-family: 'Libre Barcode 39 Text';
+  display: block;
+  width: 80%;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  left: 10%;
+  font-size: 10em;
+  color: white;
+}
+.name {
+  top: 30%;
+}
+
+.title {
+  bottom: 30%;
+}
+
+.panel-up,
+.panel-down {
+  display: block;
+  float: left;
+  position: relative;
+  top: -10%;
+  width: 10%;
+  height: 60%;
+  transition: top 0.5s;
+}
+
+.panel-up ~ .panel-up,
+.panel-down ~ .panel-down {
+  transition: top 1s;
+}
+
+.panel-up:hover ~ .panel-up,
+.panel-up:hover {
+  top: -55%;
+}
+
+.panel-down:hover ~ .panel-down,
+.panel-down:hover {
+  top: 35%;
+}
+
+#one-a,
+#one-b {
+  background: linear-gradient(#feb4b4 20%,
+    #262068 75%)
+}
+
+#two-a,
+#two-b {
+  background: linear-gradient(#fd9b9b 20%,
+    #262068 80%)
+}
+
+#three-a,
+#three-b {
+  background: linear-gradient(#fd8181 20%,
+    #262068 85%)
+}
+
+#four-a,
+#four-b {
+  background: linear-gradient(#fd6868 20%,
+    #262068 90%)
+}
+
+#five-a,
+#five-b {
+  background: linear-gradient(#fc5050 20%, #262068 95%);
+}
+
+#six-a,
+#six-b {
+  background: linear-gradient(#262068 30%, #feb4b4 80%)
+}
+
+#seven-a,
+#seven-b {
+  background: linear-gradient(#262068 25%, #fd9b9b 80%)
+}
+
+#eight-a,
+#eight-b {
+  background: linear-gradient(#262068 20%, #fd8181 80%)
+}
+
+#nine-a,
+#nine-b {
+  background: linear-gradient(#262068 15%, #fd6868 80%)
+}
+
+#ten-a,
+#ten-b {
+  background: linear-gradient(#262068 10%, #fc5050 80%)
+}
